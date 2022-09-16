@@ -1,31 +1,16 @@
-## Taxi Trajectories Linking Project
+## Taxi Tweets Linking Project
 
-
-### Project Members:
-
- - Timothy Curry <timothy.curry@uconn.edu>
- - "ahmed.soliman@uconn.edu" <ahmed.soliman@uconn.edu>,
- - "Michel, Laurent" <laurent.michel@uconn.edu>,
- - "Rajasekaran, Sanguthevar" <sanguthevar.rajasekaran@uconn.edu>,
- - Derek Aguiar <derek.aguiar@uconn.edu>
-
-### First meeting date: 
- Sep 13, 2022
-
-### T-drive Taxi Trajectories Dataset
-
- - [Download link](http://onedrive.live.com/?authkey=%21ADgmvTgfqs4hn4Q&id=CF159105855090C5%211438&cid=CF159105855090C5)
-
- 
-All files were joined as follows:
-
-```shell
-ahs16102@37gxt12:~/research/ttl/T-drive Taxi Trajectories/release/taxi_log_2008_by_id$ cat {1..10357}.txt > ../data/tdrive.csv
-```
-
-### Objectives:
+### Overview
 
 Given two datasets (shown below) namely, 200_taxi_database.csv and tweet_database.csv, link records based on spatio-temporal values within a specified space and time resolutions.
+
+### Data preparation
+
+This project uses a subset of the T-drive Taxi Trajectories Dataset
+
+- [Download link](http://onedrive.live.com/?authkey=%21ADgmvTgfqs4hn4Q&id=CF159105855090C5%211438&cid=CF159105855090C5)
+
+### Data format:
 
 200_taxi_database.csv columns:
 
@@ -57,7 +42,6 @@ First few lines from the tweet_database.csv:
 ```
 
 Where the `hashtag_id = [0|1|2|3|4]`.
-
 
 ### Desired output:
 
